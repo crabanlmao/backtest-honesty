@@ -1,0 +1,16 @@
+[project]
+name = "backtest-honesty"
+version = "0.1.0"
+description = "Small, dependency-light tools for checking whether a backtest result is real or just the output of a search."
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
